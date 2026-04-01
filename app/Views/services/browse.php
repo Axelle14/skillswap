@@ -15,7 +15,7 @@ $currentCat = $category ?? '';
 
   <div class="section-header">
     <div>
-      <h1 class="section-title">Browse <em>Services</em></h1>
+      <h1 class="section-title">Testing <em>Services</em></h1>
       <p class="section-sub"><?= number_format($total) ?> services available</p>
     </div>
     <?php if (Auth::check()): ?>
