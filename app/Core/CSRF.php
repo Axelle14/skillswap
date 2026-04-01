@@ -45,8 +45,8 @@ class CSRF
             throw new \RuntimeException('Invalid or expired CSRF token.');
         }
 
-        // Rotate after successful use (token-per-request)
-        self::rotate();
+        // ✅ Remove token rotation here to allow multiple requests
+        // self::rotate(); <- removed
     }
 
     /** Render a hidden input field. */
